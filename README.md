@@ -1,76 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Crussssh</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/spinload.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href=" https://fonts.googleapis.com/css?family=Pacifico"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Preloader -->
-      <div id="preloader">
-        <div class="spinner">
-          <div class="rect1"></div>
-          <div class="rect2"></div>
-          <div class="rect3"></div>
-          <div class="rect4"></div>
-          <div class="rect5"></div>
-        </div>
-      </div>
-      <div id="bg"></div>
-      <div class="content">
-        <header>
-          <h2 id="text3">Cậu yêu tớ có phải không nào ._.</h2>
-          <h4 id="text4">
-            Nếu cậu ko trả lời mà thoát ra tức là muốn làm vợ tớ rùi đó nha :v
-          </h4>
-        </header>
-        <button id="yes" type="button" class="btn btn-danger btn-lg">
-          Yêu ơi là yêuuuuuu <333
-        </button>
-        <button id="no" type="button" class="btn btn-info btn-lg">
-          Cậu mơ à :333
-        </button>
-      </div>
-    </div>
-    <audio src="./sound/sound.mp3" autoplay></audio>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="js/myJs.js"></script>
-  </body>
+<html>
+<head>
+<title>Gửi lời yêu thương</title>
+<link rel="stylesheet" href="codetotinh.css" />
+</head>
+<body bgcolor="#000000">
+<center>
+<img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love1.gif" width="300" height="25">
+</center>
+<h1 align="center">
+<span style="background: url(&quot;https://timoday.edu.vn/d9f50c755f7e4d8626a518843017a8bc_44837304.partner.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.3em LightYellow, 0pt 2pt 0.3em LightYellow;"><b>GỬI LỜI YÊU THƯƠNG</b></span>
+</h1>
+<center>
+<img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love2.gif" width="300" height="25">
+</center>
+<center>
+<p><img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love3.gif" width="460" height="433"></p>
+<img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love4.gif" alt="" width="220" border="0">
+</center>
+<center>
+<img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love4.gif" width="700" height="8"><br>
+<font style="font-size: 11pt">
+<font color="#FF0000" face="Comic Sans MS"></font>
+<font color="white" face="Comic Sans MS"></font>
+<marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="20" width="50%"><font face="Tahoma" size="2" color="#ffffff"> Bạn cho mình làm quen nhé hihi!</font></marquee><br>
+<img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love5.gif" width="700" height="8">
+</font>
+</center>
+<div style="left: 0pt; position: fixed; top: 0pt; z-index: 0;">
+<!--<embed align="center" height="900px" width="2000px" src="images/chuot.swf" wmode="transparent"></embed>--></div>
+</body>
 </html>

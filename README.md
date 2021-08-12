@@ -1,177 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
-<link rel="shortcut icon" href="http://imgur.com/CILKGax.png" >
-<title>Điều anh muốn nói</title> <!-- BẠN THAY ĐỔI TIÊU ĐỀ Ở ĐÂY-->
-<link rel="stylesheet" href="css3/popup.css">
-<link rel="stylesheet" href="css3/styles.css">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
-<script type="text/javascript" src="jss/jquery.popup.js"></script>
-<script src="jss/popup.js" type="text/javascript"></script>
-<script src="jss/jquery-1.js" type="text/javascript"></script>
-<script type="text/javascript" src="jss/jquery.js"></script>
 
-<script type="text/javascript">
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Crussssh</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-$(document).ready(function () {
-
-	// if user clicked on button, the overlay layer or the dialogbox, close the dialog	
-	$('a.btn-ok, #msb-nt').click(function () {		
-		$('#dialog-overlay, #dialog-box').hide();		
-		return false;
-	});
-	
-	// if user resize the window, call the same function again
-	// to make sure the overlay fills the screen and dialogbox aligned to center	
-	$(window).resize(function () {
-		
-
-		if (!$('#dialog-box').is(':hidden')) popup();		
-	});	
-	
-	
-});
-
-function popup(message) {
-		
-	var maskHeight = $(document).height();  
-	var maskWidth = $(window).width();
-
-	var dialogTop =  (maskHeight/3) - ($('#dialog-box').height());  
-	var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
-	$('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
-	$('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
-	
-
-	$('#dialog-message').html(message);
-			
-}
-
-window.onbeforeunload = function (event) {
-  var message = 'KHÔNG ĐƯỢC TẮT CÁI NÀY ĐI, TẮT ĐỒNG NGHĨA LÀ CHỊU LÀM VỢ CỦA TAO ĐÓ! ♥ =)) CÓ CHẮC TẮT KHÔNG? :3';
-  if (typeof event == 'undefined') {
-    event = window.event;
-  }
-  if (event) {
-    event.returnValue = message;
-  }
-  return message;
-}
-</script>
-		
-<script language="javascript"> 
-var kt=false
-function move()
-{
-var x = Math.random()*500
-var y = Math.random()*500
-var left=x+'px'
-var top=y+'px'
-document.getElementById('lbNo').style.left=left
-document.getElementById('lbNo').style.top=top
-}
-function dongy()
-{
-if(kt==false)
-{
-
-kt=true 
-} 
-else
-{
-}
-}
-</script>
-<script src="jss/pace.min.js"></script>
-  <link href="css3/dataurl.css" rel="stylesheet" />
-
-</head>
-	
-<!-- ________________________________________ SỬA TRANG ĐẦU NGAY ĐÂY (1)______________________________________________________-->
-
-<body onload="popup('<p>Tao hỏi cái này, mầy phải trả lời thật lòng đó nghe chưa. Không trả lời thật lòng đánh bỏ mẹ mầy.</p></br>'); on()" onunload="s()">
-<div id="bg"></div>
-<div id="myModal" class="reveal-modal large">
-    <div id="traloi">
-	<!-- ___________________________________SỬA TRANG THỨ 3 NGAY ĐÂY (3)_______________________________________________-->
-      <h1><center>NÓI GÌ ĐI <img src="http://vozforums.com/images/smilies/Off/angry.gif"/></center></h1></br>
-	  <p>TẠI SAO MẦY LẠI YÊU TAO ? <img src="http://vozforums.com/images/smilies/Off/nosebleed.gif"/>  Nhập câu trả lời xuống bên dưới và bấm GỬI ĐI</br></br></p>
-      <form id="f" name="f">
-        <input id="form" name="txt" type="text" />
-
-        <div>
-          <input id="gui" onclick="Yeu();" type="button" value="Gửi đi" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinload.css">
+    <link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinload.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href=" https://fonts.googleapis.com/css?family=Pacifico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      <div id="preloader">
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
         </div>
-      </form>
+      </div>
+  </div>
+      <div id="bg"></div>
+      <div class="content">
+        <header>
+          <h2>Cậu yêu tớ có phải không nào ._.</h2>
+          <h4>Nếu cậu ko trả lời mà thoát ra tức là muốn làm vợ tớ rùi đó nha :v </h4>
+          <h2 id="text3">Cậu yêu tớ có phải không nào ._.</h2>
+          <h4 id="text4">
+            Nếu cậu ko trả lời mà thoát ra tức là muốn làm vợ tớ rùi đó nha :v
+          </h4>
+        </header>
+        <button id="yes" type="button" class="btn btn-danger btn-lg">Yêu ơi là yêuuuuuu <333 </button>
+        <button id="no" type="button" class="btn btn-info btn-lg">Cậu mơ à :333 </button>
+        <button id="yes" type="button" class="btn btn-danger btn-lg">
+          Yêu ơi là yêuuuuuu <333
+        </button>
+        <button id="no" type="button" class="btn btn-info btn-lg">
+          Cậu mơ à :333
+        </button>
+      </div>
     </div>
+    <audio src="./sound/sound.mp3" autoplay></audio>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/myJs.js"></script>
 
-    <div style="clear: both;"></div>
-
-    <div id="divResult" style="text-align: center"></div>
-
-    <div id="divResult2"></div>
-
-    <div id="divResult3"></div>
-<a class="close-reveal-modal">&#215;</a>
-</div>
-<script language="javascript"> 
-    $(document).ready(function() {
-        $('#msb-nt').click(function() {
-                $('.music').slideToggle("fast");
-                $('#bg').css('display','none');
-        });
-    });
-</script>
-<div id="dialog-overlay"></div>
-<div id="dialog-box">
-	<div class="dialog-content">
-		<div id="dialog-message">
-		</div>
-		<div id="msb-nt">
-		<a href="#">OK :D</a>
-		</div>
-	</div>
-</div>
-		
-<div class="msg">
-		<!-- ___________________________________________________SỬA TRANG THỨ 2 NGAY ĐÂY (2)________________________________________-->	
-<h1> <?php if($_GET['em']==null) echo 'EM'; else echo $_GET['em']; ?> <b>CÓ YÊU TAO KHÔNG ?</b></h1>
-			
-<h2><?php if($_GET['em']==null) echo 'EM'; else echo $_GET['em']; ?> MẦY MÀ TẮT CÁI NÀY ĐỒNG NGHĨA MẦY SẼ LÀM VỢ CỦA TAO. SUY NGHĨ ĐI !</br>
-CÓ YÊU TAO KHÔNG ? TRẢ LỜI NHANH MẦY! ♥ =))</h2>
-
-		
-</div>
-		
-<center>
-<div id="co"> 
-<a href="#" data-reveal-id="myModal">CÓ! <?php if($_GET['em']==null) echo 'EM'; else echo $_GET['em']; ?> TAO YÊU</a>
-</div> 
-
-<div id="lbNo" style="position:absolute; left: 700px; top: 300px;"> 
-<input type="button" value="MẦY MƠ À" style="cursor:pointer;" onMouseMove="move()" > 
-</div>
-<div> <img src="http://imgur.com/i1LFl8j.png  "></div>
-</center> 
-
-<div class="music" style="display: none;">
-<object width="1" height="1">  <param name="movie" value="http://www.nhaccuatui.com/m/UoqC0m8Rofjb" />  
-<param name="quality" value="high" />  <param name="wmode" value="transparent" />  <param name="allowscriptaccess" value="always" /> 
-<param name="allowfullscreen" value="true"/> <param name="flashvars" value="autostart=true" />  
-<!-- ________________________________________THAY ĐỔI NHẠC Ở LINK BÊN DƯỚI_____________________________________-->
-<embed src="http://www.nhaccuatui.com/m/G2Fil0oSQeHm" flashvars="target=blank&autostart=true" allowscriptaccess="always" allowfullscreen="true" quality="high" wmode="transparent" type="application/x-shockwave-flash" width="1" height="1"></embed></object>
-</div>
-<script type="text/javascript">
-   $(document).ready(function(){
-      $(document).bind("contextmenu",function(e){
-        return false;
-      });
-    });
- </script>	
- <style>
- 
- </style>
-</body>
+  </body>
+</html> 
 </html>

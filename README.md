@@ -27,7 +27,7 @@
   <body>
     <div class="wrapper">
       <!-- Preloader -->
-      <div id="preloader"> https://github.com/dunghm98/web-for-crush/tree/master/css
+      <div id="preloader">
         <div class="spinner">
           <div class="rect1"></div>
           <div class="rect2"></div>
@@ -36,7 +36,7 @@
           <div class="rect5"></div>
         </div>
       </div>
-      <div id="bg"></div> https://github.com/dunghm98/web-for-crush/tree/master/img
+      <div id="bg"></div>
       <div class="content">
         <header>
           <h2 id="text3">Cậu yêu tớ có phải không nào ._.</h2>
